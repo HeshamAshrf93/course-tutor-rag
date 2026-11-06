@@ -1,0 +1,67 @@
+{
+  "threshold_from_dev": 0.45,
+  "dev": {
+    "baseline_bm25": {
+      "hit@1": 0.522,
+      "hit@3": 0.609,
+      "mrr": 0.558,
+      "n": 23
+    },
+    "hybrid": {
+      "hit@1": 0.913,
+      "hit@3": 0.957,
+      "mrr": 0.946,
+      "n": 23
+    },
+    "refusal": {
+      "correct_refusals": "8/8",
+      "wrong_refusals": "0/23"
+    },
+    "misses": [
+      {
+        "q": "ليه الاضافة في نص الارراي بطيئة؟",
+        "expected": 2,
+        "got": [
+          3,
+          2,
+          7
+        ]
+      },
+      {
+        "q": "ازاي بيشتغل البحث الثنائي؟",
+        "expected": 8,
+        "got": [
+          6,
+          6,
+          6
+        ]
+      }
+    ],
+    "refusal_errors": []
+  },
+  "test": {
+    "baseline_bm25": {
+      "hit@1": 0.619,
+      "hit@3": 0.619,
+      "mrr": 0.619,
+      "n": 21
+    },
+    "hybrid": {
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "mrr": 1.0,
+      "n": 21
+    },
+    "refusal": {
+      "correct_refusals": "9/9",
+      "wrong_refusals": "1/21"
+    },
+    "misses": [],
+    "refusal_errors": [
+      {
+        "q": "What does an inorder traversal of a BST produce?",
+        "error": "wrong_refusal"
+      }
+    ]
+  }
+}
