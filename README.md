@@ -78,3 +78,7 @@ The Docker image hasn't been build-tested yet.
 ## Stack
 
 Python, FastAPI, scikit-learn, pypdf, Gemini API (optional), pytest, Docker
+
+## License
+
+MIT, see [LICENSE](LICENSE).
